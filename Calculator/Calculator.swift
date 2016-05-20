@@ -75,7 +75,7 @@ struct Calculator {
         case .Divide:
             return b / a
         case .Equal:
-            return readyToCalculate ? result: numberStack[0]
+            return readyToCalculate ? result : numberStack[0]
         case .Sin:
             return 0
         case .Cos:
