@@ -11,6 +11,7 @@ import UIKit
 class CalculatorViewController: UIViewController, CalculatorDelegate {
     
     @IBOutlet weak var display: UILabel!
+    @IBOutlet weak var historyDisplay: UILabel!
     @IBOutlet weak var keyPad: UIView!
     
     var displayedNumber: Double {
@@ -66,12 +67,14 @@ class CalculatorViewController: UIViewController, CalculatorDelegate {
     
     @IBAction func clearDisplay() {
         display.text = "0"
+        historyDisplay.text = ""
         userIsTyping = false
         Calculator.reset()
     }
     
     func didCalculateResult(result: Double) {
         display.text = String(format: "%g", result)
+        historyDisplay.text = Calculator.history
     }
 }
 

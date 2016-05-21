@@ -15,6 +15,8 @@ struct Calculator {
     static var numberStack = DoubleStack()
     static var operationStack = OperationStack()
     
+    static var history = ""
+    
     private static var containsTwoOperands: Bool {
         return numberStack.count > 1
     }
@@ -34,7 +36,9 @@ struct Calculator {
         numberStack.append(number)
         print("number stack: \(Calculator.numberStack)")
         print("operation stack: \(Calculator.operationStack)")
-
+      
+        history = history + String(format: "%g ", number)
+        
         observeReadyToCalculate()
     }
     
@@ -43,6 +47,8 @@ struct Calculator {
         print("number stack: \(Calculator.numberStack)")
         print("operation stack: \(Calculator.operationStack)")
 
+        history = history + operation.rawValue + " "
+        
         observeReadyToCalculate()
     }
     
@@ -54,6 +60,7 @@ struct Calculator {
         let a = numberStack.removeLast()
         let b = numberStack.removeLast()
         let operation = operationStack.removeLast()
+        
         
         result = performOperation(operation, on: a, and: b)
         numberStack.append(result)
@@ -86,6 +93,7 @@ struct Calculator {
     static func reset() {
         numberStack.removeAll()
         operationStack.removeAll()
+        history = ""
         result = 0
     }
 }

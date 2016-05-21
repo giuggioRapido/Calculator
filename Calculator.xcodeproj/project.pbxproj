@@ -37,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		DC6E89DE1CEAD378007018F6 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		DC78C33A1CEFD214002A9321 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = MyPlayground.playground; path = Calculator/MyPlayground.playground; sourceTree = "<group>"; };
 		DCDA4FDD1CE4E27E00451B76 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCDA4FE01CE4E27E00451B76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCDA4FE21CE4E27E00451B76 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +82,7 @@
 		DCDA4FD41CE4E27E00451B76 = {
 			isa = PBXGroup;
 			children = (
+				DC78C33A1CEFD214002A9321 /* MyPlayground.playground */,
 				DCDA4FDF1CE4E27E00451B76 /* Calculator */,
 				DCDA4FF41CE4E27F00451B76 /* CalculatorTests */,
 				DCDA4FFF1CE4E27F00451B76 /* CalculatorUITests */,
