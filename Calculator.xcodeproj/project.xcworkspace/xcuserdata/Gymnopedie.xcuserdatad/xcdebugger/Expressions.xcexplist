@@ -10,5 +10,13 @@
             </PersistentString>
          </PersistentStrings>
       </ContextState>
+      <ContextState
+         contextName = "static Calculator.performOperation(Operation, on : Double, and : Double) -&gt; Double:Calculator.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "numberStack">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
    </ContextStates>
 </VariablesViewState>
